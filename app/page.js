@@ -1,7 +1,9 @@
 import Image from "next/image";
 import logo from "./log.jpg";
 import logos from "./log.png";
+import logoss from "./logos.jpg";
 import rise from "./rise.gif";
+import logoo from "./logo.png";
 export default function Home() {
   return (
    <div><div class="flex flex-col justify-center items-center">
@@ -9,7 +11,7 @@ export default function Home() {
      <div class="flex flex-wrap gap-5 justify-between pt-1.5 pb-3 w-full min-h-[64px] max-md:max-w-full">
        <div class="flex gap-2.5">
          <Image
-          src={logos}
+          src={logoss}
  
           width={50}
           height={50}
@@ -23,10 +25,9 @@ export default function Home() {
        </div>
        <div class="flex gap-8 items-start my-auto leading-none whitespace-nowrap max-md:max-w-full">
          <a href="https://app.hyperliquid.xyz/trade/0x51973ef5533887afcace6b26de5f19dd" class="self-stretch rounded min-w-[64px]" tabindex="0">&lt;Trade&gt;</a>
-         <a href="#about" class="self-stretch rounded min-w-[64px]" tabindex="0">&lt;About&gt;</a>
-         <a href="#team" class="self-stretch rounded min-w-[64px]" tabindex="0">&lt;Team&gt;</a>
-      <a className="text-green-200" href="https://x.com/riseonhl"> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/45c50154882d55d7d6b37abe119eb20195606ccbeb30ce9a8c3ee359916046ca?placeholderIfAbsent=true&apiKey=4fbda15560e64e0caf773165d88f4da3" class="object-contain shrink-0 self-stretch w-5 aspect-[0.91]" alt="" /></a>  
-       <a href=""> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c019f49207f3c37d6b4cbd58bbd1cd31f702307b47e70cfe2bc04785a307992d?placeholderIfAbsent=true&apiKey=4fbda15560e64e0caf773165d88f4da3" class="object-contain shrink-0 aspect-[1.25] w-[25px]" alt="" /></a> 
+         <a href="https://x.com/riseonhl" class="self-stretch rounded min-w-[64px]" tabindex="0">&lt;Twitter(x)&gt;</a>
+         <a href="#team" class="self-stretch rounded min-w-[64px]" tabindex="0">&lt;Telegram&gt;</a>
+   
        </div>
      </div>
    </nav>
