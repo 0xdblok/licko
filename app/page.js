@@ -73,9 +73,11 @@ The governance structure of RISE emphasizes community involvement while maintain
 Through this comprehensive approach, RISE aims to revolutionize how venture capital operates in the blockchain space, creating a sustainable, manipulation-resistant investment ecosystem that benefits all stakeholders while fostering the growth of promising blockchain projects.</p>
    </div>
 
+
    
  
-   </main>
+   </main>  
+   <p className="text-center text-zinc-200 pt-18 pb-8 font-extralight text-sm"> Intellectual property of RISE © </p>  
  </div></div>
   );
 }
