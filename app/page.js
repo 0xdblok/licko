@@ -1,15 +1,20 @@
 import Image from "next/image";
-
+import logo from "./log.jpg"
 export default function Home() {
   return (
    <div><div class="flex flex-col justify-center items-center">
    <nav class="flex flex-col justify-center px-4 py-3.5 w-full text-base tracking-normal text-yellow-400 bg-black min-h-[93px] max-md:max-w-full" aria-label="Main Navigation">
      <div class="flex flex-wrap gap-5 justify-between pt-1.5 pb-3 w-full min-h-[64px] max-md:max-w-full">
        <div class="flex gap-2.5">
-         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d78cd1f8fb5fe07c52bb8ec01caf79a5a5387406268658b3045f2e3943c3b794?placeholderIfAbsent=true&apiKey=4fbda15560e64e0caf773165d88f4da3" class="object-contain shrink-0 aspect-square w-[50px]" alt="Lick Industries Logo" />
+         <Image
+          src={logo}
+ 
+          width={50}
+          height={50}
+          loading="lazy" src={logo} class="object-contain shrink-0 aspect-square w-[50px]" alt="Rise Industries Logo" />
          <div class="flex flex-col my-auto">
            <div class="self-stretch leading-none rounded min-w-[64px] max-md:mr-2" role="heading" aria-level="1">
-             &lt;LICK INDUSTRIES&gt;
+             &lt;RISE INDUSTRIES&gt;
            </div>
            <time datetime="2024-12-21T14:16:57" class="mt-1.5">DEC 21 2024 14:16:57</time>
          </div>
@@ -25,18 +30,18 @@ export default function Home() {
    </nav>
    <main class="flex flex-col items-start px-4 pt-6 pb-24 mt-5 max-w-full w-[590px]">
      <section aria-label="Introduction">
-       <div class="text-base tracking-normal leading-6 text-fuchsia-600 w-[307px]">
-         Lick
+       <div class="text-base tracking-normal leading-6 text-green-200 w-[307px]">
+         Rise
          <span class="text-yellow-400">is the world's first AI</span>
          <br />
          <span class="text-yellow-400">powered Memecoin.</span>
        </div>
-       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5447bec16973c25fb353573bc43d486e7a62f78bf9b6374eb7eabad1d86fa9a5?placeholderIfAbsent=true&apiKey=4fbda15560e64e0caf773165d88f4da3" class="object-contain self-stretch mt-11 w-full rounded-xl aspect-[1.77] max-md:mt-10 max-md:max-w-full" alt="Lick Memecoin Illustration" />
+      
      </section>
  
      <section class="flex flex-col self-stretch mt-10 min-h-[585px] max-md:max-w-full" aria-label="CEO Message">
-       <div class="text-base tracking-normal leading-6 text-fuchsia-600">
-         Lick
+       <div class="text-base tracking-normal leading-6 text-green-200">
+         Rise
          <span class="text-yellow-400">is a serious community.</span>
          <br />
          <span class="text-yellow-400">We are not just faffing about.</span>
@@ -49,24 +54,28 @@ export default function Home() {
          <br />
          <span class="text-yellow-400">- BARK TWAIN, CEO</span>
        </div>
-       <div class="flex overflow-hidden flex-col justify-center mt-10 w-full max-md:max-w-full">
-         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4bdb6877cf8c5f03801cfbdfa31cbc1f8dce1e6833193c716377077b0942a34?placeholderIfAbsent=true&apiKey=4fbda15560e64e0caf773165d88f4da3" class="object-contain self-center max-w-full aspect-square w-[400px]" alt="Bark Twain Portrait" />
+       <div class="flex rounded-md overflow-hidden flex-col justify-center mt-10 w-full max-md:max-w-full">
+         <Image
+          src={logo}
+          width={400}
+          height={400}
+   class="object-contain  rounded-md self-center max-w-full aspect-square w-[400px]" alt="Bark Twain Portrait" />
          <div class="flex w-full min-h-[1px] max-md:max-w-full"></div>
        </div>
      </section>
  
      <section aria-label="Analytics" class="w-full">
        <h2 class="mt-20 text-base tracking-normal text-yellow-400 max-md:mt-10">
-         ANA<span class="text-fuchsia-600">LICK</span>TICKS: We LOOKED AT THE DATA.
+         ANA<span class="text-green-200">Rise</span>TICKS: We LOOKED AT THE DATA.
        </h2>
        <div class="self-stretch mt-12 max-md:mt-10 max-md:max-w-full">
          <div class="flex gap-5 max-md:flex-col">
            <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-             <div class="grow text-base tracking-normal leading-6 text-fuchsia-600 min-h-[120px]">
-               LICK<span class="text-yellow-400">UIDITY</span><br />
-               LICK<span class="text-yellow-400">UID ASSETS</span><br />
-               <span class="text-yellow-400">HYPER</span>LICK<span class="text-yellow-400">UID</span><br />
-               <span class="text-yellow-400">NUMBER OF</span>LICKS<br />
+             <div class="grow text-base tracking-normal leading-6 text-green-200 min-h-[120px]">
+               Rise<span class="text-yellow-400">UIDITY</span><br />
+               Rise<span class="text-yellow-400">UID ASSETS</span><br />
+               <span class="text-yellow-400">HYPER</span>Rise<span class="text-yellow-400">UID</span><br />
+               <span class="text-yellow-400">NUMBER OF</span>RiseS<br />
                <span class="text-yellow-400">AI SCORE</span>
              </div>
            </div>
@@ -87,7 +96,7 @@ export default function Home() {
  
      <footer class="mt-11 text-base tracking-normal leading-6 text-yellow-400 max-md:mt-10">
        DISCLAIMER!!<br />
-       AI MEANS ARTIFICIAL INTEL<span class="text-fuchsia-600">LICK</span>GENCE. Not to be<br />
+       AI MEANS ARTIFICIAL INTEL<span class="text-green-200">RISE</span>GENCE. Not to be<br />
        confused with sam altman's project "artificial<br />
        Intelligence".
      </footer>
