@@ -33,10 +33,10 @@ export default function Home() {
    <main class="flex flex-col items-start px-4 pt-6 pb-24 mt-5 max-w-full w-[590px]">
      <section aria-label="Introduction ">
        <div class="text-base tracking-normal px-16 leading-6 text-green-200 w-[307px]">
-         Rise
-         <span class="text-blue-300"> is the world's first AI</span>
+         
+         <span class="text-blue-300  whitespace-nowrap"> Rise is the world's first AI</span>
          <br />
-         <span class="text-blue-300">powered Memecoin.</span>
+         <p class="text-green-200 text-xs font-extralight  whitespace-nowrap">(Ventures Capital for starting up projects on Hyperliquid)</p>
        </div>
       
      </section>
